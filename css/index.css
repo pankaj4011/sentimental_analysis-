@@ -27,7 +27,7 @@ html, body {
 }
 
 #rightside{
-	height: 100vh;
+	height: auto;
 	width:100%;
 }
 

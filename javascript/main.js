@@ -12,7 +12,7 @@ app.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$urlRo
 	.state('about',{
 		url:'/about',
 		templateUrl:'about.html',
-		controller:'aboutControl',
+		controller:'aboutControl'
 		
 })
 	
@@ -20,9 +20,9 @@ app.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$urlRo
 		url:'/application',
 		views: {
 		'inputContent'	:{
-							templateUrl:'input.html',
-							controller:'inputcontrol'
-        				 }	
+				   templateUrl:'input.html',
+				   controller:'inputcontrol'
+        		         }	
 			   }
 })
 

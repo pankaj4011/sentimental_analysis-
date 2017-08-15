@@ -1,12 +1,20 @@
 # sentimental_analysis-
 
 
-This repository contains project called "Sentimental Analysis of Crowdsource Data"__
+This repository contains project : "Sentimental Analysis of Crowdsource Data"
 
 
-Developers__
+
+
+Developers
+
+
 Pankaj chaudhary 
+
+
 Harshvardhan binyala
+
+
 
 --------------------------------------------------------------------------------------------------------------------------------------- 
 How To Run the project__

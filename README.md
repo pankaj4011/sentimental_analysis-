@@ -5,5 +5,7 @@ This repository contains project called "Sentimental Analysis of Crowdsource Dat
 
 
 Developers...
-Pankaj chaudhary
+Pankaj chaudhary and 
 Harshvardhan binyala
+
+-----------------------------------------------------------------------------------------------------------------------------------------------   How To Run the project

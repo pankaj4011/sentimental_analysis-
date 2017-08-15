@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="css/input.css">
+<script type="text/javascript" src='javascript/input.js'></script>
+    <div  class ='background'ng-show='isLoading==false'>  
+  
+        
+            <div class ="input" >
+                <!-- Input form for the details to run the application-->
+                 <form name="inputForm">
+                  
+                    <img src="images/twitter.png">
+                   
+                    <input type="text" name='input' id="input" placeholder="Twitter Tag" ng-model="val"  onkeyup="validate();"  > 
+                
+                    <input type="text" name='count' id='count' placeholder="Numeric Count" ng-model="count"   onkeyup="validate();"  ><br><br>
+                
+                    <button ng-click="run()" class ='button' type='submit'>Analyse</button>
+                 </form>
+            </div>
+                 
+
+    </div>
+         
+
+    <!-- Loading Result Text -->
+    <div class ='loadingText text-center' ng-show='isLoading==true'>
+                     Loading Results 
+    </div>
+    <!-- Loader -->
+    <div class ="loader" ng-show='isLoading==true' ></div>

@@ -1,0 +1,71 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/tweets.css">
+ 
+<div class="container well" style="overflow: auto;"  >
+				<!-- Back button to application view -->
+				<div >
+
+				<button class='button' ng-click="back()">Back</button> 	
+		
+				</div> 
+
+			
+		<!-- Result section -->
+		<div class ='result' >
+				<!--result bar for positive  tweets percentage -->
+		 		Positive Tweets :<div class="progress">
+  										<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{{(response.positive/response.total)*100 | number:0}}" aria-valuemin="0" aria-valuemax="100" style="width:{{(response.positive/response.total)*100 | number:0}}%; color:black;">
+    									{{(response.positive/response.total)*100 | number:0}} %
+  										</div>
+								</div><br>
+								
+                <!--result bar for negative  tweets percentage -->
+				Negative Tweets : <div class="progress">
+  										<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="{{(response.negative/response.total)*100 | number:0}} %" aria-valuemin="0" aria-valuemax="100" style="width:{{(response.negative/response.total)*100 | number:0}}% ; color:black;">
+    									{{(response.negative/response.total)*100 | number:0}} %
+  										</div>
+								</div> <br>
+				<!--result bar for neutral  tweets percentage -->				
+				Neutral Tweets : <div class="progress">
+  										<div class="progress-bar" role="progressbar" aria-valuenow="{{((response.total-response.positive-response.negative)/response.total)*100 | number:0}} % " aria-valuemin="0" aria-valuemax="100" style="width:{{((response.total-response.positive-response.negative)/response.total)*100 | number:0}}%; color:black;">
+    								 	{{((response.total-response.positive-response.negative)/response.total)*100 | number:0}} % 
+  										</div>
+								</div> 
+		
+		</div>	
+		
+		
+		<!-- Positive tweets -->
+  		<div class ='tweets col-lg-6' >
+		
+		    <ul class ='ptext' >
+			   <h2 style='text-align:center;color:black'>Positive Tweets</h2><br>
+			
+			   <li ng-repeat="tweet in response.ptweets" ><br>
+					{{tweet.text}}				
+		       </li><br>
+			
+			</ul><br>
+        </div>
+
+        <!-- Negative tweets -->
+		<div class ='tweets col-lg-6'>
+	
+		    <ul class ='ntext'>	
+				<h2 style='text-align:center;color:black;'>Negative Tweets</h2><br>
+				
+				<li ng-repeat='tweet in response.ntweets'><br>
+					{{tweet.text}}
+				</li><br>
+				
+		    </ul>
+		
+
+        </div>
+
+
+
+</div>
+
+
+       

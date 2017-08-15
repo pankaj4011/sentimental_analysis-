@@ -51,10 +51,10 @@ How To Run the project
 Change the shebang(#!)
 
 
-  1.For windows users: #!C:\Python27\python.exe
+  1.For windows users:  #!C:\Python27\python.exe
   
   
 
-  2.For Linux users:#!/usr/local/bin/python
+  2.For Linux users:  #!/usr/local/bin/python
   
   
